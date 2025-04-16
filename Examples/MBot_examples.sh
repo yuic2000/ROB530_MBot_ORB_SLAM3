@@ -2,11 +2,15 @@
 
 pathDatasetMBot='/Datasets/MBot'
 
-echo "Launching MBot with Monocular sensor"
-./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_6 ./Monocular/MBot_TimeStamps/maze_0415_FRB_6.txt dataset-MBot_mono
-
 # echo "Launching MBot with Monocular sensor"
-# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_5 ./Monocular/MBot_TimeStamps/maze_0415_FRB_5.txt dataset-MBot_mono
+# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_7 ./Monocular/MBot_TimeStamps/maze_0415_FRB_7.txt dataset-MBot_mono
+
+# some img missing
+# echo "Launching MBot with Monocular sensor"
+# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_6 ./Monocular/MBot_TimeStamps/maze_0415_FRB_6.txt dataset-MBot_mono
+
+echo "Launching MBot with Monocular sensor"
+./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_5 ./Monocular/MBot_TimeStamps/maze_0415_FRB_5.txt dataset-MBot_mono
 
 # echo "Launching MBot with Monocular sensor"
 # ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_4 ./Monocular/MBot_TimeStamps/maze_0415_FRB_4.txt dataset-MBot_mono
