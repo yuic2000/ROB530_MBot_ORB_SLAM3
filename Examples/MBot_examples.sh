@@ -42,7 +42,7 @@ pathDatasetMBot='/Datasets/MBot'
 # Monocular-Inertial Examples
 #------------------------------------
 # echo "Launching MH01 with Monocular-Inertial sensor"
-# ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_5 ./MBot_TimeStamps/maze_0415_FRB_5.txt dataset-MBot_monois
+# ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_5 ./MBot_TimeStamps/maze_0415_FRB_5.txt dataset-MBot_monoi
 
 echo "Launching MH01 with Monocular-Inertial sensor"
-./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_3 ./MBot_TimeStamps/maze_0415_FRB_3.txt dataset-MBot_monois
+./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/MBot.yaml "$pathDatasetMBot"/maze_0415_FRB_3 ./MBot_TimeStamps/maze_0415_FRB_3.txt dataset-MBot_monoi
