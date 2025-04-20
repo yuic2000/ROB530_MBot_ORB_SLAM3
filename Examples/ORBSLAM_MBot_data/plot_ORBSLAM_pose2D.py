@@ -17,7 +17,7 @@ def main():
     # Add parameters (arguments)
     parser.add_argument('-lidar', '--lidar', type=str, help="ground truth from LiDAR SLAM", required=True)
     parser.add_argument('-orbslam', '--orbslam', type=str, help="pose estimation from ORBSLAM", required=True)
-    # Usage: python3 plot_ORBSLAM_pose3D.py -lidar ../0415_maze_logs/test_maze3.log -orbslam kf_dataset-MBot_mono_0415_3.txt
+    # Usage: python3 plot_ORBSLAM_pose3D.py -lidar ../0419_rec_logs/rec4.log -orbslam f_dataset-MBot_mono_rec_4.txt
     
     args = parser.parse_args()
     
@@ -56,6 +56,7 @@ def main():
         time_orbslam = data[:, 0]/1000
         x_orbslam = data[:, 3]
         y_orbslam = -data[:, 1]
+        #y_orbslam = data[:, 1]  # for Flipped
     except IndexError as e:
         print(f"Error extracting columns: {e}")
         return
@@ -73,7 +74,7 @@ def main():
     std_dev_y = np.std(np.array(matched_lidar_y) - np.array(y_orbslam))
 
     ## -------------  Plot x, y  versus time using scatter plot  ------------ ##
-    fig = plt.figure(figsize=(10, 6))
+    fig = plt.figure(figsize=(8, 6))
     ax = fig.add_subplot(111)
     ax.plot(x_lidar, y_lidar, label="Ground Truth (LiDAR SLAM)", color='red', linestyle='-')
     ax.plot(x_odom, y_odom, label="Odometry Pose", color='brown', linestyle='--')
@@ -83,12 +84,13 @@ def main():
     ax.set_title("ORB-SLAM Pose vs Ground Truth")
 
     # Display standard deviation on the plot
-    plt.text(0.98, 0.1, f"RMS Error x: {rms_error_x:.4f}\nRMS Error y: {rms_error_y:.4f}\nStd Dev x: {std_dev_x:.4f}\nStd Dev y: {std_dev_y:.4f}\n", 
+    plt.text(0.55, 0.6, f"RMS Error x: {rms_error_x:.4f}\nRMS Error y: {rms_error_y:.4f}\nStd Dev x: {std_dev_x:.4f}\nStd Dev y: {std_dev_y:.4f}\n", 
          transform=plt.gca().transAxes, fontsize=10, verticalalignment='bottom', horizontalalignment='right')
 
     ax.legend()
     ax.grid()
-
+    # Save the plot as an image
+    plt.savefig("orbslam_mono_rec6.png", dpi=300, bbox_inches='tight')
     plt.show()
 
 if __name__ == "__main__":
