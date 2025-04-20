@@ -30,11 +30,11 @@ Camera1.k2: -0.32708741
 Camera1.p1: 0.01584969
 Camera1.p2: 0.00658235
 
-Camera.width: 1280
-Camera.height: 720
+Camera.width: 1280       #1280
+Camera.height: 720      #720
 
-Camera.newWidth: 600 #600
-Camera.newHeight: 350 #350
+Camera.newWidth: 640    #600
+Camera.newHeight: 360   #350
 
 # Camera frames per second 
 Camera.fps: 10

@@ -18,11 +18,11 @@ Camera1.k2: -0.32708741
 Camera1.p1: 0.01584969
 Camera1.p2: 0.00658235
 
-Camera.width: 1280
-Camera.height: 720
+Camera.width: 1280          # 640
+Camera.height: 720         # 360
 
-Camera.newWidth: 600 #600
-Camera.newHeight: 350 #350
+Camera.newWidth: 640       #600
+Camera.newHeight: 360      #350
 
 # Camera frames per second 
 Camera.fps: 10
@@ -36,16 +36,20 @@ IMU.T_b_c1: !!opencv-matrix
    rows: 4
    cols: 4
    dt: f
-   data: [0.0, -1.0, 0.0,  0.0289,
-          1.0,  0.0, 0.0, -0.0176,
+   data: [1.0,  0.0, 0.0, -0.0176,
           0.0,  0.0, 1.0,  0.147,
+          0.0, -1.0, 0.0,  0.0289,
           0.0,  0.0, 0.0,  1.0]
+   # data: [0.0, -1.0, 0.0,  0.0289,
+   #        1.0,  0.0, 0.0, -0.0176,
+   #        0.0,  0.0, 1.0,  0.147,
+   #        0.0,  0.0, 0.0,  1.0]
 
 # IMU noise
-IMU.NoiseGyro: 1.7e-4 #1.6968e-04
-IMU.NoiseAcc: 2.0000e-3 #2.0e-3
-IMU.GyroWalk: 1.9393e-05 
-IMU.AccWalk: 3.0000e-03 # 3e-03
+IMU.NoiseGyro: 3.68e-6         # 1.7e-4 #1.6968e-04
+IMU.NoiseAcc:  2.0000e-3      # 2.0e-3
+IMU.GyroWalk:  9.185e-5         # 1.9393e-05 
+IMU.AccWalk:   3.0000e-03     # 3e-03
 IMU.Frequency: 25.0
 
 #--------------------------------------------------------------------------------------------
