@@ -7,13 +7,13 @@ pathDatasetMBot='/Datasets/MBot'
 #------------------------------------
 
 # echo "Launching MBot with Monocular sensor"
-# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/rec_0419_6 "$pathDatasetMBot"/rec_0419_6/mav0/timestamp.txt dataset-MBot_mon
+# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/rec_0419_6 "$pathDatasetMBot"/rec_0419_6/mav0/timestamp.txt dataset-MBot_mono
 
 echo "Launching MBot with Monocular sensor"
-./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/rec_0419_5 "$pathDatasetMBot"/rec_0419_5/mav0/timestamp.txt dataset-MBot_mon
+./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/rec_0419_5 "$pathDatasetMBot"/rec_0419_5/mav0/timestamp.txt dataset-MBot_mono
 
 # echo "Launching MBot with Monocular sensor"
-# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/rec_0419_4 "$pathDatasetMBot"/rec_0419_4/mav0/timestamp.txt dataset-MBot_mon
+# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/rec_0419_4 "$pathDatasetMBot"/rec_0419_4/mav0/timestamp.txt dataset-MBot_mon0
 
 # echo "Launching MBot with Monocular sensor"
 # ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/MBot.yaml "$pathDatasetMBot"/rec_0419_3 "$pathDatasetMBot"/rec_0419_3/mav0/timestamp.txt dataset-MBot_mono
